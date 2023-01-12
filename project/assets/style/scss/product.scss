@@ -1,0 +1,133 @@
+@import "public.scss";
+body {
+  background-color: rgb(32, 21, 32);
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 768px;
+  padding: 16px;
+  margin: 0 auto;
+
+  .product__image {
+    width: 100%;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+    }
+
+    &-backBtn {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(239, 227, 200, 0.25);
+      box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(5px);
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 50%;
+
+      .arrow {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
+  .product__info {
+    margin-bottom: 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+
+    &__header-title {
+      font-family: "Rosarivo";
+      font-size: 24px;
+      line-height: 125%;
+    }
+    &__header-subtitle {
+      font-family: "Rosarivo";
+      font-size: 16px;
+      line-height: 125%;
+    }
+    &__header-star {
+      font-family: "Rosarivo";
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    &__desc {
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 145%;
+
+      .desc-more {
+        font-weight: 700;
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  .product__milkType {
+    &-title {
+      color: #ffffff;
+      font-family: "Rosarivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 125%;
+    }
+    &-buttons {
+      max-width: 400px;
+    }
+    &-button {
+      font-family: "Rosarivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 125%;
+      text-align: center;
+      color: #efe3c8;
+      background-color: transparent;
+      border: 1px solid #efe3c8;
+      border-radius: 10px;
+      padding: 8px 20px;
+    }
+  }
+
+  .active-button {
+    color: rgba(32, 21, 32, 1) !important;
+    background-color: #efe3c8 !important;
+  }
+
+  .product__price {
+    font-family: "Open Sans";
+    font-style: normal;
+    color: #ffffff;
+
+    &-title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 115%;
+    }
+    &-amount {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 115%;
+    }
+    &-button {
+      width: 75%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #4a2b29;
+      padding: 15.0048px 50px 13px;
+      background: #efe3c8;
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+  }
+}

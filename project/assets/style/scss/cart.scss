@@ -1,0 +1,184 @@
+@import "public.scss";
+body {
+  background-color: rgb(32, 21, 32);
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 768px;
+  padding: 16px;
+  margin: 0 auto;
+
+  .title {
+    font-family: "Rosarivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .cart {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 12px;
+
+    &__info {
+      img {
+        height: 75px;
+        width: 75px;
+        border-radius: 10px;
+      }
+      &-title {
+        font-family: "Rosarivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+      }
+
+      &-subtitle {
+        font-family: "Rosarivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 145%;
+      }
+      &-price {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 115%;
+      }
+    }
+
+    &__quantity {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      height: 30px;
+
+      &-counter {
+        width: 30px;
+        height: 30px;
+        background: #efe3c8;
+        border-radius: 8px;
+        color: #201520;
+        font-size: 28px;
+      }
+      &-number {
+        font-family: "Rosarivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 160%;
+      }
+    }
+  }
+
+  hr {
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+  }
+
+  .couponCode {
+    padding: 10px 50px 10px 30px;
+    background: #38232a;
+    position: relative;
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 12.5px;
+      border-radius: 50%;
+      background-color: #201520;
+    }
+    .start-circle {
+      left: -10px;
+    }
+    .end-circle {
+      right: -10px;
+    }
+
+    &__title {
+      font-family: "Rosarivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #efe3c8;
+    }
+  }
+
+  .fixedCost {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 115%;
+    font-style: normal;
+
+    &-title {
+      font-family: "Rosarivo";
+      font-weight: 400;
+    }
+    &-price {
+      font-family: "Open Sans";
+      font-weight: 600;
+    }
+  }
+
+  .totalPrice {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 115%;
+    font-style: normal;
+    &-title {
+      font-family: "Rosarivo";
+      font-weight: 400;
+    }
+
+    &-price {
+      font-family: "Open Sans";
+      font-weight: 600;
+    }
+  }
+  .paymentButton {
+    padding: 15px;
+    background: #efe3c8;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #4a2b29;
+  }
+
+  .navigation {
+    width: 100%;
+    padding: 26px;
+    background: black;
+    border-radius: 40px 40px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .navigation {
+      max-width: 768px;
+      left: calc((100% - 768px) / 2);
+      border-radius: 40px;
+    }
+  }
+}

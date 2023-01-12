@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rosarivo:ital@0;1&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.j-c {
+  justify-content: center;
+}
+
+.j-sb {
+  justify-content: space-between;
+}
+
+.j-sa {
+  justify-content: space-around;
+}
+
+.a-c {
+  align-items: center;
+}
+
+.gap5 {
+  gap: 5px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb48 {
+  margin-bottom: 48px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+.container::before {
+  content: "";
+  background-image: url(../../image/login.jpg);
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  filter: brightness(0.5);
+  background-size: cover;
+  background-position: center;
+}
+.container form {
+  width: 75%;
+  position: absolute;
+  padding: 16px;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 15px;
+  height: 400px;
+  width: 50%;
+  max-width: 350px;
+}
+.container form input,
+.container form button {
+  width: 75%;
+  padding: 12px;
+  border: none;
+  background-color: white;
+  outline: none;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.container form input::placeholder,
+.container form button::placeholder {
+  font-size: 14px;
+  color: gray;
+}
+.container form button {
+  cursor: pointer;
+  margin-top: 40px;
+  background-color: rgba(42, 42, 42, 0.85);
+  color: white;
+}
+.container form button:hover {
+  color: black;
+  background-color: white;
+}

@@ -1,0 +1,193 @@
+@import "public.scss";
+body {
+  background-color: #201520;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 768px;
+  padding: 16px;
+  margin: 0 auto;
+
+  header {
+    font-style: normal;
+    font-weight: 400;
+
+    .header-title {
+      font-family: "Rosarivo";
+      font-size: 36px;
+      line-height: 51px;
+      color: rgba(239, 227, 200, 0.5);
+      margin-bottom: -20px;
+    }
+    .header-subtitle {
+      font-family: "Rosarivo";
+      font-size: 48px;
+      line-height: 67px;
+      color: #efe3c8;
+    }
+    .header-avatar {
+      padding: 2px;
+      background-color: black;
+      border: 2px solid #dcaa70;
+      border-radius: 50%;
+    }
+  }
+
+  .searchBox {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 19px 10px 20px;
+    input {
+      width: 75%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-family: "Rosarivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #efe3c8;
+
+      &::placeholder {
+        color: rgba(239, 227, 200, 0.5);
+      }
+    }
+  }
+
+  .mainPart {
+    aside {
+      padding: 8px 35px;
+      position: fixed;
+      width: 530px;
+      height: 38px;
+      background-color: rgb(144, 124, 124);
+      border-radius: 0px 0px 40px 0px;
+      bottom: 300px;
+      left: -246px;
+      transform: rotate(-90deg);
+
+      p {
+        font-family: "Rosarivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(239, 227, 200, 0.5);
+      }
+      .active-text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #efe3c8;
+      }
+    }
+    .products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 50px;
+      color: #ffffff;
+
+      .product {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12.6087px;
+        padding: 12px;
+
+        &__image {
+          height: 100px;
+          position: relative;
+          &__icon {
+            position: absolute;
+            background-color: rgba(65, 65, 65, 0.5);
+            backdrop-filter: blur(7.5px);
+            border-radius: 15px 0px 15px 1px;
+            padding: 5px;
+            top: 0;
+            left: 0;
+
+            &-text {
+              font-family: "Rosarivo";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 14px;
+            }
+          }
+          img {
+            width: auto;
+            height: 100%;
+            border-radius: 15px;
+          }
+        }
+
+        &__title {
+          font-family: "Rosarivo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 145%;
+        }
+
+        &__priceAdd {
+          background: #ffffff14;
+          padding: 12px;
+          border-radius: 12px;
+          position: relative;
+
+          &-price {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 115%;
+          }
+          &-add {
+            height: 100%;
+            padding: 13px;
+            color: black;
+            background-color: #efe3c8;
+            border-radius: 12px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation {
+    width: 100%;
+    padding: 26px;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    .mainPart {
+      aside {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .navigation {
+      max-width: 768px;
+      left: calc((100% - 768px) / 2);
+      border-radius: 40px;
+    }
+  }
+}
