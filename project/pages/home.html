@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-Delivery | home page</title>
+    <link rel="stylesheet" href="../assets/style/css/home.css" />
+    <link rel="stylesheet" href="../assets/style/toastify.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="flex j-sb a-c mb16">
+        <div>
+          <p class="header-title">déjà</p>
+          <p class="header-subtitle">Brew</p>
+        </div>
+        <div class="header-avatar flex j-c a-c">
+          <img src="../assets/image/users/avatar.png" alt="avatar" />
+        </div>
+      </header>
+      <!-- search -->
+      <div class="searchBox flex gap20 mb24">
+        <iconify-icon
+          icon="uil:search"
+          style="color: rgba(255, 255, 255, 0.7)"
+          width="25"
+        ></iconify-icon>
+        <input
+          type="text"
+          placeholder="Browse your favourite coffee..."
+          id="search-text"
+        />
+      </div>
+      <!-- main part -->
+      <div class="mainPart">
+        <!-- aside -->
+        <aside class="flex j-sa" id="search-by-title">
+          <p class="products-title">Flat White</p>
+          <p class="products-title">Espresso</p>
+          <p class="products-title">Americano</p>
+          <p class="products-title">Latte</p>
+          <p class="products-title">Cappuccino</p>
+        </aside>
+
+        <!-- products -->
+        <div class="products gap15 mb80" id="products-container"></div>
+      </div>
+      <!-- footer -->
+      <div class="navigation">
+        <div class="navigation__items flex j-sb a-c">
+          <a href="home.html">
+            <iconify-icon
+              icon="heroicons:home-20-solid"
+              style="color: #efe3c8"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <a href="cart.html">
+            <iconify-icon
+              icon="ph:shopping-cart-simple-fill"
+              style="color: #746763"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <a href="favorite.html">
+            <iconify-icon
+              icon="mdi:cards-heart"
+              style="color: #746763"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <iconify-icon
+            icon="mdi:bell-notification"
+            style="color: #746763"
+            width="30"
+          ></iconify-icon>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/scripts/public/iconify-icon.min.js"></script>
+    <script src="../assets/scripts/public/toastify-js.js"></script>
+    <script src="../assets/scripts/public/axios.min.js"></script>
+    <script src="../assets/scripts/pages/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-Delivery | product page</title>
+    <link rel="stylesheet" href="../assets/style/css/product.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- image -->
+      <div class="product__image flex j-c">
+        <div class="relative">
+          <img src="" alt="cappuccino" id="product-image" />
+          <div class="product__image-backBtn flex j-c a-c" id="back-button">
+            <iconify-icon
+              icon="ph:arrow-left-bold"
+              width="25"
+              class="arrow"
+            ></iconify-icon>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- information -->
+        <div class="product__info mb30">
+          <!-- header -->
+          <div class="flex j-sb mb8">
+            <div class="flex col gap5">
+              <p class="product__info__header-title" id="product-title"></p>
+              <div class="flex a-c gap20">
+                <p
+                  class="product__info__header-subtitle"
+                  id="product-subtitle"
+                ></p>
+                <div class="flex a-c gap5">
+                  <iconify-icon
+                    icon="material-symbols:star"
+                    style="color: #d3a601"
+                    width="25"
+                    height="25"
+                  ></iconify-icon>
+                  <p class="product__info__header-star">4.5</p>
+                </div>
+              </div>
+            </div>
+            <iconify-icon
+              icon="mdi:cards-heart-outline"
+              width="25"
+              height="25"
+              style="color: #efe3c8"
+              id="favorit"
+            ></iconify-icon>
+          </div>
+          <!-- description -->
+          <div class="product__info__desc" id="product-description"></div>
+        </div>
+        <!-- milk -->
+        <div class="product__milkType mb48">
+          <p class="product__milkType-title mb8">Choice of Milk</p>
+          <div
+            class="product__milkType-buttons flex j-sb gap5"
+            id="milk-type-buttons-container"
+          >
+            <button class="product__milkType-button">Oat Milk</button>
+            <button class="product__milkType-button">Soy Milk</button>
+            <button class="product__milkType-button">Almond Milk</button>
+          </div>
+        </div>
+        <!-- price -->
+        <div class="product__price flex j-sb">
+          <div class="flex col">
+            <p class="product__price-title">Price</p>
+            <p class="product__price-amount">
+              ₹ <span id="product-price">249</span>
+            </p>
+          </div>
+          <button class="product__price-button" id="add-to-cart">
+            BUY NOW
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/scripts/public/iconify-icon.min.js"></script>
+    <script src="../assets/scripts/public/axios.min.js"></script>
+    <script src="../assets/scripts/pages/product.js"></script>
+  </body>
+</html>

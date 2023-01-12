@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-Delivery | cart page</title>
+    <link rel="stylesheet" href="../assets/style/css/cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="mb-24">
+        <p class="title mb16">Cart</p>
+      </header>
+      <!-- carts -->
+      <div class="carts flex col gap15 mb24" id="carts-container"></div>
+      <hr class="mb24" />
+      <!-- coupon code and fixed costs -->
+      <div>
+        <!-- couponCode -->
+        <div class="couponCode flex j-sb a-c mb24">
+          <div class="circle start-circle"></div>
+          <p class="couponCode__title">Apply Coupon Code</p>
+          <iconify-icon
+            icon="material-symbols:arrow-forward-ios"
+            style="color: #efe3c8"
+            width="25"
+          ></iconify-icon>
+          <div class="circle end-circle"></div>
+        </div>
+        <!-- fixed costs -->
+        <div class="fixedCost flex col gap10 mb24">
+          <div class="flex j-sb a-c">
+            <p class="fixedCost-title">Delivery Charges</p>
+            <p class="fixedCost-price">₹49</p>
+          </div>
+          <div class="flex j-sb a-c">
+            <p class="fixedCost-title">Taxes</p>
+            <p class="fixedCost-price">₹64.87</p>
+          </div>
+        </div>
+      </div>
+      <hr class="mb24" />
+      <!-- total price -->
+      <div class="totalPrice flex j-sb mb24">
+        <p class="totalPrice-title">Grand Total</p>
+        <p class="totalPrice-price">₹ <span id="grand-total"></span></p>
+      </div>
+      <div class="paymentButton mb80" id="pay-button">PAY NOW</div>
+      <!-- footer -->
+      <div class="navigation">
+        <div class="navigation__items flex j-sb a-c">
+          <a href="home.html">
+            <iconify-icon
+              icon="heroicons:home-20-solid"
+              style="color: #746763"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <a href="cart.html">
+            <iconify-icon
+              icon="ph:shopping-cart-simple-fill"
+              style="color: #efe3c8"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <a href="favorite.html">
+            <iconify-icon
+              icon="mdi:cards-heart"
+              style="color: #746763"
+              width="30"
+            ></iconify-icon>
+          </a>
+          <iconify-icon
+            icon="mdi:bell-notification"
+            style="color: #746763"
+            width="30"
+          ></iconify-icon>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/scripts/public/iconify-icon.min.js"></script>
+    <script src="../assets/scripts/public/axios.min.js"></script>
+    <script src="../assets/scripts/pages/cart.js"></script>
+  </body>
+</html>
