@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "assets/image/products/cinnamon.png",
+      "title": "Cappuccino",
+      "subtitle": "Cinnamon & Cocoa",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 99
+    },
+    {
+      "id": 2,
+      "image": "assets/image/products/drizzled.png",
+      "title": "Cappuccino",
+      "subtitle": "Drizzled with Caramel",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 199
+    },
+    {
+      "id": 3,
+      "image": "assets/image/products/bursting.png",
+      "title": "Latte",
+      "subtitle": "Bursting Blueberry",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 249
+    },
+    {
+      "id": 4,
+      "image": "assets/image/products/dalgona.png",
+      "title": "Americano",
+      "subtitle": "Dalgona Whipped Macha",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 299
+    },
+    {
+      "id": 5,
+      "image": "assets/image/products/greenCoffee.png",
+      "title": "Cappuccino",
+      "subtitle": "Green Coffee",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 100
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "image": "assets/image/products/cinnamon.png",
+      "title": "Cappuccino",
+      "subtitle": "Cinnamon & Cocoa",
+      "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.",
+      "price": 99,
+      "milkType": "Almond Milk"
+    }
+  ],
+  "users": [
+  ]
+}
